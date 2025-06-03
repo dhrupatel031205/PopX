@@ -1,19 +1,31 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "../styles/Landing.css"; // import the CSS file
 
 const Landing = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="d-flex vh-100 justify-content-center align-items-center bg-light">
-      <div className="p-4 bg-white rounded shadow-sm text-center" style={{ maxWidth: '400px', width: '100%' }}>
-        <h2 className="mb-3 fw-bold">Welcome to PopX</h2>
-        <p className="mb-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div className="landing-wrapper">
+      <div className="landing-container">
+        <div className="landing-text-block">
+          <p className="landing-heading">Welcome to PopX</p>
+          <p className="landing-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
 
-        <button className="btn btn-primary w-100 mb-3" onClick={() => navigate('/signup')}>
+        <button
+          className="landing-btn-primary"
+          onClick={() => navigate("/signup")}
+        >
           Create Account
         </button>
-        <button className="btn btn-outline-primary w-100" onClick={() => navigate('/login')}>
+
+        <button
+          className="landing-btn-secondary"
+          onClick={() => navigate("/login")}
+        >
           Already Registered? Login
         </button>
       </div>
