@@ -1,0 +1,29 @@
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 18px;
+  color: #1f1f1f;
+}
+
+.profile-email {
+  color: #666;
+  font-size: 14px;
+}
+
+.profile-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
